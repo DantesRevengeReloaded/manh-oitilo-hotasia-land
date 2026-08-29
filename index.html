@@ -3,19 +3,513 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MANH - Premium Land Parcel</title>
-    <meta name="description" content="Discover MANH, an exclusive parcel of land available for sale.">
+    <title>Chotásia - A Land of Opportunity</title>
+    
+    <!-- Open Graph / Rich Link Preview (Messenger, Viber, Facebook) -->
+    <meta property="og:title" content="CHOTASIA - A Land of Opportunity">
+    <meta property="og:description" content="Premium coastal land for sale in Oítylos, Mani. 11,000 m² with unobstructed sea views.">
+    <meta property="og:image" content="https://dantesrevengereloaded.github.io/manh-oitilo-hotasia-land/sources/icon.jpg">
+    <meta property="og:url" content="https://dantesrevengereloaded.github.io/manh-oitilo-hotasia-land/">
+    <meta property="og:type" content="website">
+    
+    <!-- Favicon and App Icons -->
+    <link rel="icon" type="image/jpeg" href="sources/icon.jpg">
+    <link rel="apple-touch-icon" href="sources/icon.jpg">
+
+    <meta name="description" content="11,000 m² of buildable coastline, fifty metres from the water in Eastern Mani, Greece.">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
 </head>
-<body>
-    <main class="hero">
-        <div class="content-wrapper">
-            <h1 class="title">MANH</h1>
-            <p class="subtitle">Exclusive Land Parcel</p>
+<body class="lang-en">
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <div class="nav-brand">CHOTASIA - A LAND OF OPPORTUNITY</div>
+            <div class="nav-links">
+                <a href="#facts"><span class="i18n en">The Land</span><span class="i18n de">Das Land</span><span class="i18n gr">Το Οικόπεδο</span></a>
+                <a href="#geometry"><span class="i18n en">Geometry</span><span class="i18n de">Geometrie</span><span class="i18n gr">Γεωμετρία</span></a>
+                <a href="#opportunity"><span class="i18n en">Opportunity</span><span class="i18n de">Möglichkeit</span><span class="i18n gr">Ευκαιρία</span></a>
+                <a href="#location"><span class="i18n en">Location</span><span class="i18n de">Lage</span><span class="i18n gr">Τοποθεσία</span></a>
+                <a href="#gallery"><span class="i18n en">Gallery</span><span class="i18n de">Galerie</span><span class="i18n gr">Συλλογή</span></a>
+                <a href="#contact" class="btn-outline"><span class="i18n en">Enquire</span><span class="i18n de">Anfrage</span><span class="i18n gr">Επικοινωνία</span></a>
+            </div>
+            <div class="lang-switcher">
+                <button class="lang-btn active" data-lang="en">EN</button>
+                <button class="lang-btn" data-lang="de">DE</button>
+                <button class="lang-btn" data-lang="gr">GR</button>
+            </div>
+            <div class="menu-toggle" id="menu-toggle">
+                <span></span><span></span><span></span>
+            </div>
         </div>
-    </main>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobile-menu">
+        <div class="mobile-nav-links">
+            <a href="#facts"><span class="i18n en">The Land</span><span class="i18n de">Das Land</span><span class="i18n gr">Το Οικόπεδο</span></a>
+            <a href="#geometry"><span class="i18n en">Geometry</span><span class="i18n de">Geometrie</span><span class="i18n gr">Γεωμετρία</span></a>
+            <a href="#opportunity"><span class="i18n en">Opportunity</span><span class="i18n de">Möglichkeit</span><span class="i18n gr">Ευκαιρία</span></a>
+            <a href="#location"><span class="i18n en">Location</span><span class="i18n de">Lage</span><span class="i18n gr">Τοποθεσία</span></a>
+            <a href="#gallery"><span class="i18n en">Gallery</span><span class="i18n de">Galerie</span><span class="i18n gr">Συλλογή</span></a>
+            <a href="#contact" class="btn-outline"><span class="i18n en">Enquire</span><span class="i18n de">Anfrage</span><span class="i18n gr">Επικοινωνία</span></a>
+        </div>
+    </div>
+
+    <!-- Section 1: Hero -->
+    <section id="hero" class="hero">
+        <div class="hero-bg"></div>
+        <div class="container hero-content">
+            <div class="hero-text reveal-up">
+                <div class="eyebrow">
+                    <span class="i18n en">Eastern Mani · Laconia · Peloponnese</span>
+                    <span class="i18n de">Ostmani · Lakonien · Peloponnes</span>
+                    <span class="i18n gr">Ανατολική Μάνη · Λακωνία · Πελοπόννησος</span>
+                </div>
+                <h1 class="headline">
+                    <span class="i18n en">11,000 m² of buildable coastline, fifty metres from the water.</span>
+                    <span class="i18n de">11.000 m² bebaubares Küstengrundstück, fünfzig Meter vom Wasser entfernt.</span>
+                    <span class="i18n gr">11.000 τ.μ. οικοδομήσιμης παραλιακής γης, πενήντα μέτρα από τη θάλασσα.</span>
+                </h1>
+                <p class="subheadline">
+                    <span class="i18n en">One of the last unclaimed stretches of the Mani coast — a private, amphitheatrically sloped plot facing west over open sea, with the freedom to build a home, a business, or both. Land like this rarely reaches the market.</span>
+                    <span class="i18n de">Eines der letzten unberührten Grundstücke an der Küste der Mani — ein privates, amphitheatralisch geneigtes Grundstück mit Blick nach Westen über das offene Meer, mit der Freiheit, ein Zuhause, ein Geschäft oder beides zu errichten. Land wie dieses kommt selten auf den Markt.</span>
+                    <span class="i18n gr">Ένα από τα τελευταία ανεκμετάλλευτα κομμάτια της ακτής της Μάνης — ένα ιδιωτικό, αμφιθεατρικά επικλινές οικόπεδο με θέα στο ανοιχτό πέλαγος προς δύση, με την ελευθερία να χτίσετε κατοικία, επιχείρηση, ή και τα δύο. Τέτοια γη σπάνια βγαίνει στην αγορά.</span>
+                </p>
+            </div>
+        </div>
+        <div class="hero-stats-wrapper">
+            <div class="container">
+                <div class="hero-stats reveal-up delay-1">
+                    <div class="stat-item">
+                        <div class="stat-value"><span class="i18n en">€195,000</span><span class="i18n de">€195.000</span><span class="i18n gr">€195.000</span></div>
+                        <div class="stat-label"><span class="i18n en">Price</span><span class="i18n de">Preis</span><span class="i18n gr">Τιμή</span></div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value"><span class="i18n en">11,000 m²</span><span class="i18n de">11.000 m²</span><span class="i18n gr">11.000 τ.μ.</span></div>
+                        <div class="stat-label"><span class="i18n en">Plot area</span><span class="i18n de">Grundstücksfläche</span><span class="i18n gr">Έκταση οικοπέδου</span></div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value"><span class="i18n en">1,100 m²</span><span class="i18n de">1.100 m²</span><span class="i18n gr">1.100 τ.μ.</span></div>
+                        <div class="stat-label"><span class="i18n en">Buildable</span><span class="i18n de">Bebaubar</span><span class="i18n gr">Δομήσιμη επιφάνεια</span></div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value"><span class="i18n en">50 m</span><span class="i18n de">50 m</span><span class="i18n gr">50 μ.</span></div>
+                        <div class="stat-label"><span class="i18n en">To the sea</span><span class="i18n de">Zum Meer</span><span class="i18n gr">Απόσταση από τη θάλασσα</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 2: Facts -->
+    <section id="facts" class="section-padding facts-section theme-light">
+        <div class="container">
+            <div class="facts-cluster reveal-up">
+                <!-- Fact 1 -->
+                <div class="fact-bubble">
+                    <div class="fact-label"><span class="i18n en">Price</span><span class="i18n de">Preis</span><span class="i18n gr">Τιμή</span></div>
+                    <div class="fact-val"><span class="i18n en">€195,000</span><span class="i18n de">€195.000</span><span class="i18n gr">€195.000</span></div>
+                </div>
+                <!-- Fact 2 -->
+                <div class="fact-bubble">
+                    <div class="fact-label"><span class="i18n en">Price / m²</span><span class="i18n de">Preis / m²</span><span class="i18n gr">Τιμή / τ.μ.</span></div>
+                    <div class="fact-val"><span class="i18n en">€17.72</span><span class="i18n de">€17,72</span><span class="i18n gr">€17,72</span></div>
+                </div>
+                <!-- Fact 3 -->
+                <div class="fact-bubble">
+                    <div class="fact-label"><span class="i18n en">Total area</span><span class="i18n de">Gesamtfläche</span><span class="i18n gr">Συνολική έκταση</span></div>
+                    <div class="fact-val"><span class="i18n en">11,000 m²</span><span class="i18n de">11.000 m²</span><span class="i18n gr">11.000 τ.μ.</span></div>
+                </div>
+                <!-- Fact 4 -->
+                <div class="fact-bubble">
+                    <div class="fact-label"><span class="i18n en">Distance to sea</span><span class="i18n de">Entfernung zum Meer</span><span class="i18n gr">Απόσταση από τη θάλασσα</span></div>
+                    <div class="fact-val"><span class="i18n en">50 m</span><span class="i18n de">50 m</span><span class="i18n gr">50 μ.</span></div>
+                </div>
+                <!-- Fact 5 -->
+                <div class="fact-bubble">
+                    <div class="fact-label"><span class="i18n en">Road frontage</span><span class="i18n de">Straßenfront</span><span class="i18n gr">Πρόσοψη σε δρόμο</span></div>
+                    <div class="fact-val"><span class="i18n en">60 m</span><span class="i18n de">60 m</span><span class="i18n gr">60 μ.</span></div>
+                </div>
+                <!-- Fact 6 -->
+                <div class="fact-bubble">
+                    <div class="fact-label"><span class="i18n en">Orientation</span><span class="i18n de">Ausrichtung</span><span class="i18n gr">Προσανατολισμός</span></div>
+                    <div class="fact-val"><span class="i18n en">West</span><span class="i18n de">West</span><span class="i18n gr">Δυτικός</span></div>
+                </div>
+                <!-- Fact 7 -->
+                <div class="fact-bubble">
+                    <div class="fact-label"><span class="i18n en">Slope</span><span class="i18n de">Neigung</span><span class="i18n gr">Κλίση</span></div>
+                    <div class="fact-val"><span class="i18n en">Amphitheatric, sea view</span><span class="i18n de">Amphitheatralisch, Meerblick</span><span class="i18n gr">Αμφιθεατρική, με θέα θάλασσα</span></div>
+                </div>
+                <!-- Fact 8 -->
+                <div class="fact-bubble">
+                    <div class="fact-label"><span class="i18n en">Zoning</span><span class="i18n de">Bebauungsstatus</span><span class="i18n gr">Πολεοδομικό καθεστώς</span></div>
+                    <div class="fact-val"><span class="i18n en">Outside residential plan, buildable</span><span class="i18n de">Außerhalb des Bebauungsplans, bebaubar</span><span class="i18n gr">Εκτός σχεδίου, οικοδομήσιμο</span></div>
+                </div>
+                <!-- Fact 9 -->
+                <div class="fact-bubble">
+                    <div class="fact-label"><span class="i18n en">Access</span><span class="i18n de">Zufahrt</span><span class="i18n gr">Πρόσβαση</span></div>
+                    <div class="fact-val"><span class="i18n en">Paved road, single frontage</span><span class="i18n de">Asphaltstraße, eine Straßenfront</span><span class="i18n gr">Ασφαλτόδρομος, μία πρόσοψη</span></div>
+                </div>
+                <!-- Fact 10 -->
+                <div class="fact-bubble">
+                    <div class="fact-label"><span class="i18n en">Availability</span><span class="i18n de">Verfügbarkeit</span><span class="i18n gr">Διαθεσιμότητα</span></div>
+                    <div class="fact-val"><span class="i18n en">Immediate</span><span class="i18n de">Sofort</span><span class="i18n gr">Άμεση</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 3: Geometry -->
+    <section id="geometry" class="section-padding geometry-section alt-bg">
+        <div class="container geometry-layout">
+            <div class="geometry-text reveal-left">
+                <div class="kicker">
+                    <span class="i18n en">Site Geometry</span>
+                    <span class="i18n de">Grundstücksgeometrie</span>
+                    <span class="i18n gr">Γεωμετρία Οικοπέδου</span>
+                </div>
+                <h2 class="section-title">
+                    <span class="i18n en">One road. One shoreline. Total privacy.</span>
+                    <span class="i18n de">Eine Straße. Eine Küstenlinie. Vollständige Privatsphäre.</span>
+                    <span class="i18n gr">Ένας δρόμος. Μία ακτογραμμή. Απόλυτη ιδιωτικότητα.</span>
+                </h2>
+                <p class="body-text">
+                    <span class="i18n en">A single, generous 60-metre frontage gives this plot a rare kind of privacy and control — space enough to raise your own tower on the hillside, in the tradition of the region, with nothing between you and the sea view but the amphitheatric slope itself.</span>
+                    <span class="i18n de">Eine einzige, großzügige 60-Meter-Straßenfront verleiht diesem Grundstück eine seltene Privatsphäre und Kontrolle — genug Raum, um in der Tradition der Region Ihren eigenen Turm am Hang zu errichten, mit nichts zwischen Ihnen und dem Meerblick außer dem amphitheatralischen Hang selbst.</span>
+                    <span class="i18n gr">Μία γενναιόδωρη πρόσοψη 60 μέτρων προσφέρει σε αυτό το οικόπεδο μια σπάνια ιδιωτικότητα και έλεγχο — αρκετό χώρο για να χτίσετε τον δικό σας πύργο στην πλαγιά, σύμφωνα με την παράδοση της περιοχής, χωρίς τίποτα ανάμεσα σε εσάς και τη θέα εκτός από την ίδια την αμφιθεατρική κλίση.</span>
+                </p>
+                <ul class="spec-list">
+                    <li>
+                        <span class="i18n en"><strong>Frontage</strong> — 60 m along primary road</span>
+                        <span class="i18n de"><strong>Straßenfront</strong> — 60 m entlang der Hauptstraße</span>
+                        <span class="i18n gr"><strong>Πρόσοψη</strong> — 60 μ. στον κύριο δρόμο</span>
+                    </li>
+                    <li>
+                        <span class="i18n en"><strong>Topography</strong> — Amphitheatric slope to sea</span>
+                        <span class="i18n de"><strong>Topografie</strong> — Amphitheatralischer Hang zum Meer</span>
+                        <span class="i18n gr"><strong>Τοπογραφία</strong> — Αμφιθεατρική κλίση προς τη θάλασσα</span>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="geometry-interactive reveal-right">
+                <div class="map-survey-wrapper">
+                    <div class="map-container-locked">
+                        <iframe 
+                            src="https://maps.google.com/maps?q=36.729489,22.334789&t=k&z=17&ie=UTF8&iwloc=&output=embed" 
+                            width="100%" 
+                            height="100%" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                    
+                    <!-- Bespoke SVG Survey Overlay -->
+                    <svg class="survey-overlay" width="100%" height="100%" preserveAspectRatio="none">
+                        <!-- Plot Boundary -->
+                        <polygon points="200,100 450,120 400,320 150,280" class="survey-plot" />
+                        
+                        <!-- 60m Road Frontage -->
+                        <line x1="200" y1="100" x2="450" y2="120" class="survey-road" />
+                        
+                        <!-- 50m to Sea -->
+                        <line x1="150" y1="280" x2="50" y2="350" class="survey-sea" />
+                        <circle cx="50" cy="350" r="4" class="survey-node" />
+                    </svg>
+                    
+                    <!-- Labels -->
+                    <div class="survey-labels">
+                        <div class="s-label s-road"><span class="i18n en">60m Road Frontage</span><span class="i18n de">60m Straßenfront</span><span class="i18n gr">60μ Πρόσοψη</span></div>
+                        <div class="s-label s-sea"><span class="i18n en">50m to Sea</span><span class="i18n de">50m zum Meer</span><span class="i18n gr">50μ στη Θάλασσα</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 4: Opportunity -->
+    <section id="opportunity" class="section-padding opportunity-section theme-light">
+        <div class="container">
+            <div class="section-header text-center reveal-up">
+                <div class="kicker">
+                    <span class="i18n en">The Opportunity</span>
+                    <span class="i18n de">Die Möglichkeit</span>
+                    <span class="i18n gr">Η Ευκαιρία</span>
+                </div>
+                <h2 class="section-title">
+                    <span class="i18n en">Build the life you've been planning — or the business you've been dreaming of.</span>
+                    <span class="i18n de">Bauen Sie das Leben, das Sie sich vorgestellt haben — oder das Geschäft, von dem Sie geträumt haben.</span>
+                    <span class="i18n gr">Χτίστε τη ζωή που σχεδιάζατε — ή την επιχείρηση που ονειρευόσασταν.</span>
+                </h2>
+            </div>
+            
+            <div class="opp-cards-wrapper">
+                <!-- Card 1: Residence -->
+                <div class="opp-card opp-residence reveal-up">
+                    <div class="card-header">
+                        <svg class="opp-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+                        <div class="card-tag">
+                            <span class="i18n en">Residence</span>
+                            <span class="i18n de">Wohnhaus</span>
+                            <span class="i18n gr">Κατοικία</span>
+                        </div>
+                    </div>
+                    <h3 class="card-title">
+                        <span class="i18n en">Build a private family home</span>
+                        <span class="i18n de">Bauen Sie ein privates Familienhaus</span>
+                        <span class="i18n gr">Χτίστε μια ιδιωτική οικογενειακή κατοικία</span>
+                    </h3>
+                    <p class="card-body">
+                        <span class="i18n en">A footprint large enough for a substantial main house, oriented west into the afternoon light, with sea views held by the natural slope of the land. A place built once, for good.</span>
+                        <span class="i18n de">Eine Grundfläche, die für ein stattliches Hauptgebäude ausreicht, nach Westen ins Nachmittagslicht ausgerichtet, mit Meerblick dank der natürlichen Hangneigung. Ein Ort, einmal gebaut, für immer.</span>
+                        <span class="i18n gr">Μια δομήσιμη επιφάνεια αρκετή για μια σημαντική κύρια κατοικία, προσανατολισμένη δυτικά προς το απογευματινό φως, με θέα θάλασσα χάρη στη φυσική κλίση του εδάφους. Ένας τόπος που χτίζεται μια φορά, για πάντα.</span>
+                    </p>
+                </div>
+                
+                <!-- Card 2: Business -->
+                <div class="opp-card opp-business reveal-up delay-1">
+                    <div class="card-header">
+                        <svg class="opp-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 22h14a2 2 0 0 0 2-2V7l-5-5H6a2 2 0 0 0-2 2v4"></path><path d="M14 2v4a2 2 0 0 0 2 2h4"></path><path d="m3 15 2-2 2 2"></path><path d="m3 19 2-2 2 2"></path><path d="m7 15 2-2 2 2"></path><path d="m7 19 2-2 2 2"></path></svg>
+                        <div class="card-tag">
+                            <span class="i18n en">Business</span>
+                            <span class="i18n de">Gewerbe</span>
+                            <span class="i18n gr">Επιχείρηση</span>
+                        </div>
+                    </div>
+                    <h3 class="card-title">
+                        <span class="i18n en">Build a guesthouse, taverna, or studios</span>
+                        <span class="i18n de">Bauen Sie ein Gästehaus, eine Taverne oder Studios</span>
+                        <span class="i18n gr">Χτίστε ένα ξενώνα, ταβέρνα, ή στούντιο</span>
+                    </h3>
+                    <p class="card-body">
+                        <span class="i18n en">A second, larger buildable allowance sits alongside the residential footprint — suited to small-scale hospitality, an olive-oil operation, or an income property, fifty metres from the water. Mani is drawing more travelers every season who want exactly this.</span>
+                        <span class="i18n de">Eine zweite, größere Baufläche liegt neben dem Wohnbereich — geeignet für kleine Hotellerie, Olivenölproduktion oder eine Einnahmequelle, fünfzig Meter vom Wasser entfernt. Die Mani zieht jede Saison mehr Reisende an, die genau das suchen.</span>
+                        <span class="i18n gr">Μια δεύτερη, μεγαλύτερη δομήσιμη επιφάνεια βρίσκεται δίπλα στην οικιστική, κατάλληλη για μικρής κλίμακας φιλοξενία, παραγωγή ελαιολάδου, ή ακίνητο εισοδήματος, πενήντα μέτρα από το νερό. Η Μάνη προσελκύει όλο και περισσότερους ταξιδιώτες κάθε σεζόν που αναζητούν ακριβώς αυτό.</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 5: Location -->
+    <section id="location" class="section-padding location-section alt-bg">
+        <div class="container location-layout">
+            <div class="location-text reveal-left">
+                <div class="kicker">
+                    <span class="i18n en">Location</span>
+                    <span class="i18n de">Lage</span>
+                    <span class="i18n gr">Τοποθεσία</span>
+                </div>
+                <h2 class="section-title">
+                    <span class="i18n en">Eastern Mani — the last unspoiled edge of the Peloponnese.</span>
+                    <span class="i18n de">Ostmani — der letzte unberührte Rand des Peloponnes.</span>
+                    <span class="i18n gr">Ανατολική Μάνη — η τελευταία ανέγγιχτη άκρη της Πελοποννήσου.</span>
+                </h2>
+                <div class="body-text">
+                    <p>
+                        <span class="i18n en">Chotásia sits on the coast of Oítylos, in Eastern Mani, Laconia — a region of stone tower villages, olive terraces, and a coastline that has largely escaped mass development. It is a three to three-and-a-half hour drive from Athens, and within reach of Kalamata's regional airport for international arrivals in season.</span>
+                        <span class="i18n de">Chotásia liegt an der Küste von Oítylos, in der Ostmani, Lakonien — einer Region mit Steintürmen, Olivenhainen und einer Küste, die weitgehend von Massenbebauung verschont geblieben ist. Athen ist drei bis dreieinhalb Autostunden entfernt, und der Regionalflughafen Kalamata ist saisonal für internationale Ankünfte erreichbar.</span>
+                        <span class="i18n gr">Η Χωτάσια βρίσκεται στην ακτή του Οιτύλου, στην Ανατολική Μάνη, Λακωνία — μια περιοχή με πέτρινα πυργόσπιτα, ελαιώνες, και μια ακτογραμμή που έχει σε μεγάλο βαθμό αποφύγει τη μαζική ανάπτυξη. Απέχει τρεις έως τρεισήμισι ώρες οδικώς από την Αθήνα, και βρίσκεται σε προσιτή απόσταση από το περιφερειακό αεροδρόμιο της Καλαμάτας για διεθνείς αφίξεις εποχιακά.</span>
+                    </p>
+                    <p>
+                        <span class="i18n en">It's also a rare strategic base — close enough to explore both Western and Eastern Mani, two of the most distinct and dramatic landscapes in Greece, from a single point.</span>
+                        <span class="i18n de">Es ist auch eine seltene strategische Basis — nah genug, um sowohl die West- als auch die Ostmani zu erkunden, zwei der eigenständigsten und eindrucksvollsten Landschaften Griechenlands, von einem einzigen Punkt aus.</span>
+                        <span class="i18n gr">Είναι επίσης μια σπάνια στρατηγική βάση — αρκετά κοντά ώστε να εξερευνήσετε τόσο τη Δυτική όσο και την Ανατολική Μάνη, δύο από τα πιο ιδιαίτερα και εντυπωσιακά τοπία της Ελλάδας, από ένα και μόνο σημείο.</span>
+                    </p>
+                    <p>
+                        <span class="i18n en">Buyers drawn to Mani are typically looking for what dense coastal markets elsewhere in Greece no longer offer: real distance from crowds, dramatic landscape, and land large enough to actually build a life on.</span>
+                        <span class="i18n de">Käufer, die sich zur Mani hingezogen fühlen, suchen in der Regel das, was dicht besiedelte Küstenregionen anderswo in Griechenland nicht mehr bieten: echte Distanz zur Menschenmenge, dramatische Landschaft und genug Land, um tatsächlich ein Leben aufzubauen.</span>
+                        <span class="i18n gr">Οι αγοραστές που ελκύονται από τη Μάνη αναζητούν συνήθως αυτό που οι πυκνοκατοικημένες παράκτιες αγορές αλλού στην Ελλάδα δεν προσφέρουν πια: πραγματική απόσταση από το πλήθος, εντυπωσιακό τοπίο, και γη αρκετά μεγάλη ώστε να χτίσετε πραγματικά μια ζωή.</span>
+                    </p>
+                </div>
+            </div>
+            
+            <div class="location-facts reveal-right">
+                <div class="fact-list-box">
+                    <ul>
+                        <li>
+                            <span class="list-label">
+                                <span class="i18n en">Region</span><span class="i18n de">Region</span><span class="i18n gr">Περιοχή</span>
+                            </span>
+                            <span class="list-val">
+                                <span class="i18n en">Eastern Mani, Laconia</span><span class="i18n de">Ostmani, Lakonien</span><span class="i18n gr">Ανατολική Μάνη, Λακωνία</span>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="list-label">
+                                <span class="i18n en">Nearest village</span><span class="i18n de">Nächstes Dorf</span><span class="i18n gr">Πλησιέστερο χωριό</span>
+                            </span>
+                            <span class="list-val">
+                                <span class="i18n en">Chotásia, Oítylos</span><span class="i18n de">Chotásia, Oítylos</span><span class="i18n gr">Χωτάσια, Οίτυλος</span>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="list-label">
+                                <span class="i18n en">Nearest airport</span><span class="i18n de">Nächster Flughafen</span><span class="i18n gr">Πλησιέστερο αεροδρόμιο</span>
+                            </span>
+                            <span class="list-val">
+                                <span class="i18n en">Kalamata (KLX)</span><span class="i18n de">Kalamata (KLX)</span><span class="i18n gr">Καλαμάτα (KLX)</span>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="list-label">
+                                <span class="i18n en">From Athens</span><span class="i18n de">Von Athen</span><span class="i18n gr">Από την Αθήνα</span>
+                            </span>
+                            <span class="list-val">
+                                <span class="i18n en">~3–3.5 hr by car</span><span class="i18n de">ca. 3–3,5 Std. mit dem Auto</span><span class="i18n gr">~3–3,5 ώρες με αυτοκίνητο</span>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="list-label">
+                                <span class="i18n en">Character</span><span class="i18n de">Charakter</span><span class="i18n gr">Χαρακτήρας</span>
+                            </span>
+                            <span class="list-val">
+                                <span class="i18n en">Stone towers, olive groves, quiet coast</span><span class="i18n de">Steintürme, Olivenhaine, ruhige Küste</span><span class="i18n gr">Πέτρινοι πύργοι, ελαιώνες, ήσυχη ακτή</span>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 6: Gallery -->
+    <section id="gallery" class="section-padding gallery-section theme-darkest">
+        <div class="container">
+            <div class="gallery-grid">
+                <div class="gallery-item item-large reveal-up">
+                    <video autoplay loop muted playsinline src="sources/VID_20260812_202107881.mp4"></video>
+                    <div class="gallery-caption">
+                        <span class="i18n en">Entrance View</span>
+                        <span class="i18n de">Eingangsbereich</span>
+                        <span class="i18n gr">Θέα Εισόδου</span>
+                    </div>
+                </div>
+                <div class="gallery-item reveal-up delay-1">
+                    <img src="sources/IMG_20260812_190708282.jpg" alt="Amphitheatric View">
+                    <div class="gallery-caption">
+                        <span class="i18n en">Amphitheatric View</span>
+                        <span class="i18n de">Amphitheatralischer Blick</span>
+                        <span class="i18n gr">Αμφιθεατρική Θέα</span>
+                    </div>
+                </div>
+                <div class="gallery-item reveal-up delay-2">
+                    <img src="sources/IMG_20260812_201858832.jpg" alt="Amphitheatric slope">
+                    <div class="gallery-caption">
+                        <span class="i18n en">Amphitheatric slope</span>
+                        <span class="i18n de">Amphitheatralischer Hang</span>
+                        <span class="i18n gr">Αμφιθεατρική κλίση</span>
+                    </div>
+                </div>
+                <div class="gallery-item reveal-up delay-1">
+                    <img src="sources/IMG_20260812_201953916.jpg" alt="Shoreline">
+                    <div class="gallery-caption">
+                        <span class="i18n en">Shoreline, 50m</span>
+                        <span class="i18n de">Küstenlinie, 50m</span>
+                        <span class="i18n gr">Ακτογραμμή, 50μ.</span>
+                    </div>
+                </div>
+                <div class="gallery-item reveal-up delay-2">
+                    <img src="sources/IMG_20260812_202047574.jpg" alt="Divine Sunset">
+                    <div class="gallery-caption">
+                        <span class="i18n en">Divine Sunset</span>
+                        <span class="i18n de">Traumhafter Sonnenuntergang</span>
+                        <span class="i18n gr">Μαγευτικό Ηλιοβασίλεμα</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 7: Contact -->
+    <section id="contact" class="section-padding contact-section theme-darkest">
+        <div class="container contact-layout">
+            <div class="contact-text reveal-up">
+                <div class="kicker">
+                    <span class="i18n en">Enquire</span>
+                    <span class="i18n de">Anfrage</span>
+                    <span class="i18n gr">Επικοινωνία</span>
+                </div>
+                <h2 class="section-title">
+                    <span class="i18n en">This kind of plot doesn't come up twice — see it for yourself.</span>
+                    <span class="i18n de">Ein solches Grundstück kommt nicht zweimal — überzeugen Sie sich selbst.</span>
+                    <span class="i18n gr">Ευκαιρία για μία σοβαρή επένδυση — μπορείτε να το δείτε από κοντά .</span>
+                </h2>
+                <p class="body-text">
+                    <span class="i18n en">Serious enquiries welcome from private buyers, agents, and investors. Site visits can be arranged with notice; virtual walkthroughs available for international buyers.</span>
+                    <span class="i18n de">Ernsthafte Anfragen von privaten Käufern, Maklern und Investoren sind willkommen. Besichtigungen können nach Vereinbarung organisiert werden; virtuelle Rundgänge stehen internationalen Käufern zur Verfügung.</span>
+                    <span class="i18n gr">Δεκτές σοβαρές προτάσεις από ιδιώτες αγοραστές, μεσίτες, και επενδυτές. Επισκέψεις στο οικόπεδο μπορούν να οργανωθούν κατόπιν συνεννόησης· εικονικές περιηγήσεις διαθέσιμες για διεθνείς αγοραστές.</span>
+                </p>
+                <div class="contact-buttons">
+                    <a href="mailto:beatricepatouchea@gmail.com" class="btn btn-primary">
+                        <span class="i18n en">Email an enquiry</span>
+                        <span class="i18n de">Anfrage per E-Mail</span>
+                        <span class="i18n gr">Αποστολή email</span>
+                    </a>
+                    <a href="tel:+306947984314" class="btn btn-secondary">
+                        <span class="i18n en">Call</span>
+                        <span class="i18n de">Anrufen</span>
+                        <span class="i18n gr">Κλήση</span>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="contact-card reveal-up delay-1">
+                <div class="quick-facts">
+                    <div class="qf-item">
+                        <div class="qf-label">
+                            <span class="i18n en">Location</span>
+                            <span class="i18n de">Lage</span>
+                            <span class="i18n gr">Τοποθεσία</span>
+                        </div>
+                        <div class="qf-val">
+                            <span class="i18n en">Chotásia, Oítylos, 23062</span>
+                            <span class="i18n de">Chotásia, Oítylos, 23062</span>
+                            <span class="i18n gr">Χωτάσια, Οίτυλος, 23062</span>
+                        </div>
+                    </div>
+                    <div class="qf-item">
+                        <div class="qf-label">
+                            <span class="i18n en">Price</span>
+                            <span class="i18n de">Preis</span>
+                            <span class="i18n gr">Τιμή</span>
+                        </div>
+                        <div class="qf-val highlight">
+                            <span class="i18n en">€195,000</span>
+                            <span class="i18n de">€195.000</span>
+                            <span class="i18n gr">€195.000</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer theme-darkest">
+        <div class="container footer-layout">
+            <div class="footer-brand">
+                <h4>CHOTASIA</h4>
+                <p class="text-muted"><span class="i18n en">A Land of Opportunity</span><span class="i18n de">Ein Land der Möglichkeiten</span><span class="i18n gr">Μια Γη Ευκαιριών</span></p>
+            </div>
+            <div class="footer-contact">
+                <a href="mailto:beatricepatouchea@gmail.com">beatricepatouchea@gmail.com</a>
+                <a href="tel:+306947984314">+30 6947984314</a>
+            </div>
+            <div class="footer-links">
+                <a href="#hero"><span class="i18n en">Back to Top</span><span class="i18n de">Nach oben</span><span class="i18n gr">Επιστροφή στην κορυφή</span></a>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>&copy; 2026 Chotásia Land. <span class="i18n en">All rights reserved.</span><span class="i18n de">Alle Rechte vorbehalten.</span><span class="i18n gr">Με την επιφύλαξη παντός δικαιώματος.</span></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
