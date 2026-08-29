@@ -130,7 +130,9 @@ h1, h2, h3 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 80px;
+    min-height: 80px;
+    height: auto;
+    padding: 1rem 0;
 }
 
 .nav-brand {
@@ -882,19 +884,28 @@ h1, h2, h3 {
     .nav-links { display: none; }
     .menu-toggle { display: flex; }
     
+    .nav-brand {
+        font-size: 0.9rem;
+        line-height: 1.4;
+        max-width: 60%;
+    }
+    
     .hero {
         height: auto;
-        min-height: 100vh;
-        justify-content: flex-start;
-        padding-top: 100px;
+        min-height: auto;
+        display: block; /* Switch to block to prevent any flex overflow upward */
+        padding-top: 140px; /* Safe clearance for wrapped navbar */
+        padding-bottom: 2rem;
     }
     
     .hero-content {
-        align-items: flex-start;
-        padding: 4rem 0;
+        display: block;
+        padding: 0;
+        margin-bottom: 3rem;
     }
     
-    .headline { font-size: 2.5rem; }
+    .headline { font-size: 2.2rem; margin-bottom: 1.5rem; }
+    .subheadline { font-size: 1.1rem; }
     .hero-stats { grid-template-columns: 1fr; gap: 1.5rem; }
     
     .opp-cards-wrapper { grid-template-columns: 1fr; }
