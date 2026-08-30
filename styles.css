@@ -641,7 +641,7 @@ h1, h2, h3 {
 }
 
 .theme-light .opp-card .card-title {
-    color: var(--accent-hover);
+    color: var(--text-main);
 }
 
 .theme-light .opp-card .card-body {
@@ -658,8 +658,8 @@ h1, h2, h3 {
     box-shadow: 0 10px 30px rgba(200, 107, 83, 0.1);
 }
 
-.theme-light .opp-residence .opp-icon { stroke: var(--accent-olive); }
-.theme-light .opp-business .opp-icon { stroke: var(--accent-terracotta); }
+.theme-light .opp-residence .opp-icon { stroke: #cddcae; }
+.theme-light .opp-business .opp-icon { stroke: #ffb099; }
 
 .card-tag {
     display: inline-block;
@@ -673,13 +673,13 @@ h1, h2, h3 {
 }
 
 .theme-light .opp-residence .card-tag {
-    color: var(--accent-olive);
-    background: rgba(124, 136, 104, 0.15);
+    color: #cddcae;
+    background: rgba(205, 220, 174, 0.15);
 }
 
 .theme-light .opp-business .card-tag {
-    color: var(--accent-terracotta);
-    background: rgba(200, 107, 83, 0.15);
+    color: #ffb099;
+    background: rgba(255, 176, 153, 0.15);
 }
 
 .card-title {
