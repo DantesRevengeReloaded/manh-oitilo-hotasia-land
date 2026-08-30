@@ -171,24 +171,38 @@ h1, h2, h3 {
     color: var(--bg-base);
 }
 
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
 .lang-switcher {
     display: flex;
-    gap: 0.5rem;
+    gap: 0.25rem;
 }
 
 .lang-btn {
     background: none;
     border: none;
-    color: var(--text-muted);
     cursor: pointer;
-    font-size: 0.8rem;
-    font-weight: 600;
+    font-size: 1.25rem;
     padding: 0.25rem;
     transition: var(--transition);
+    filter: grayscale(100%) opacity(50%);
 }
 
 .lang-btn.active, .lang-btn:hover {
-    color: var(--text-main);
+    filter: grayscale(0%) opacity(100%);
+}
+
+.mobile-enquire-icon {
+    display: none;
+    color: var(--accent);
+    width: 24px;
+    height: 24px;
+    align-items: center;
+    justify-content: center;
 }
 
 .menu-toggle {
@@ -546,14 +560,27 @@ h1, h2, h3 {
     stroke: var(--accent);
 }
 
+.theme-light .opp-card {
+    background: linear-gradient(180deg, var(--bg-alt) 0%, var(--bg-base) 100%);
+    color: var(--text-main);
+}
+
+.theme-light .opp-card .card-title {
+    color: var(--text-main);
+}
+
+.theme-light .opp-card .card-body {
+    color: var(--text-muted);
+}
+
 .theme-light .opp-residence {
-    background: linear-gradient(180deg, rgba(124, 136, 104, 0.1) 0%, var(--bg-stone) 100%);
-    border-color: rgba(124, 136, 104, 0.2);
+    border-color: rgba(124, 136, 104, 0.4);
+    box-shadow: 0 10px 30px rgba(124, 136, 104, 0.1);
 }
 
 .theme-light .opp-business {
-    background: linear-gradient(180deg, rgba(200, 107, 83, 0.1) 0%, var(--bg-stone) 100%);
-    border-color: rgba(200, 107, 83, 0.2);
+    border-color: rgba(200, 107, 83, 0.4);
+    box-shadow: 0 10px 30px rgba(200, 107, 83, 0.1);
 }
 
 .theme-light .opp-residence .opp-icon { stroke: var(--accent-olive); }
@@ -883,6 +910,7 @@ h1, h2, h3 {
 @media (max-width: 768px) {
     .nav-links { display: none; }
     .menu-toggle { display: flex; }
+    .mobile-enquire-icon { display: flex; }
     
     .nav-brand {
         font-size: 0.9rem;
