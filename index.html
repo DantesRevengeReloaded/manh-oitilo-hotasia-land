@@ -203,7 +203,33 @@
             <div class="geometry-interactive reveal-right">
                 <div class="visual-stack">
                     <img src="sources/plot_map.jpg" alt="Top-down plot view" class="geo-img top-down">
-                    <img src="sources/3d_slope.jpg" alt="3D Topographic view" class="geo-img isometric">
+                    <!-- Isometric interactive plot visualization -->
+                    <div class="iso-container">
+                        <div class="iso-scene">
+                            <div class="iso-water" data-tooltip="50m to sea / 50m zum Meer / 50μ. από θάλασσα">
+                                <div class="waves"></div>
+                            </div>
+                            <div class="iso-terrain">
+                                <div class="iso-plot-area">
+                                    <div class="build-zone"></div>
+                                    <div class="iso-slope-lines">
+                                        <span></span><span></span><span></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="iso-road" data-tooltip="60m frontage / 60m Straßenfront / 60μ. πρόσοψη"></div>
+                            
+                            <div class="compass">
+                                <div class="compass-arrow"></div>
+                                <span class="i18n en">W</span><span class="i18n de">W</span><span class="i18n gr">Δ</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="interactive-hint">
+                        <span class="i18n en">Hover over diagram to explore geometry</span>
+                        <span class="i18n de">Über das Diagramm fahren, um die Geometrie zu erkunden</span>
+                        <span class="i18n gr">Περάστε το ποντίκι πάνω από το διάγραμμα</span>
+                    </div>
                 </div>
             </div>
         </div>
