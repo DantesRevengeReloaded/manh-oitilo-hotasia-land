@@ -641,7 +641,7 @@ h1, h2, h3 {
 }
 
 .theme-light .opp-card .card-title {
-    color: var(--text-main);
+    color: var(--accent-hover);
 }
 
 .theme-light .opp-card .card-body {
