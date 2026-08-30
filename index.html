@@ -201,37 +201,9 @@
             </div>
             
             <div class="geometry-interactive reveal-right">
-                <div class="map-survey-wrapper">
-                    <div class="map-container-locked">
-                        <iframe 
-                            src="https://maps.google.com/maps?q=36.729489,22.334789&t=k&z=17&ie=UTF8&iwloc=&output=embed" 
-                            width="100%" 
-                            height="100%" 
-                            style="border:0;" 
-                            allowfullscreen="" 
-                            loading="lazy" 
-                            referrerpolicy="no-referrer-when-downgrade">
-                        </iframe>
-                    </div>
-                    
-                    <!-- Bespoke SVG Survey Overlay -->
-                    <svg class="survey-overlay" width="100%" height="100%" preserveAspectRatio="none">
-                        <!-- Plot Boundary -->
-                        <polygon points="200,100 450,120 400,320 150,280" class="survey-plot" />
-                        
-                        <!-- 60m Road Frontage -->
-                        <line x1="200" y1="100" x2="450" y2="120" class="survey-road" />
-                        
-                        <!-- 50m to Sea -->
-                        <line x1="150" y1="280" x2="50" y2="350" class="survey-sea" />
-                        <circle cx="50" cy="350" r="4" class="survey-node" />
-                    </svg>
-                    
-                    <!-- Labels -->
-                    <div class="survey-labels">
-                        <div class="s-label s-road"><span class="i18n en">60m Road Frontage</span><span class="i18n de">60m Straßenfront</span><span class="i18n gr">60μ Πρόσοψη</span></div>
-                        <div class="s-label s-sea"><span class="i18n en">50m to Sea</span><span class="i18n de">50m zum Meer</span><span class="i18n gr">50μ στη Θάλασσα</span></div>
-                    </div>
+                <div class="visual-stack">
+                    <img src="sources/plot_map.jpg" alt="Top-down plot view" class="geo-img top-down">
+                    <img src="sources/3d_slope.jpg" alt="3D Topographic view" class="geo-img isometric">
                 </div>
             </div>
         </div>

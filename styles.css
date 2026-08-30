@@ -428,97 +428,37 @@ h1, h2, h3 {
     font-weight: 500;
 }
 
-/* Map Container / Survey Graphic */
-.map-survey-wrapper {
-    position: relative;
+/* Visual Stack */
+.visual-stack {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
     width: 100%;
-    height: 400px;
+}
+
+.geo-img {
+    width: 100%;
     border-radius: 8px;
-    overflow: hidden;
     border: 1px solid var(--border);
     box-shadow: 0 10px 30px rgba(0,0,0,0.3);
     transition: var(--transition);
-    background: var(--bg-alt);
+    object-fit: cover;
 }
 
-.map-survey-wrapper:hover {
+.geo-img.top-down {
+    height: 350px;
+    filter: contrast(1.1) saturate(1.1);
+}
+
+.geo-img.isometric {
+    height: 350px;
+    filter: contrast(1.05);
+}
+
+.geo-img:hover {
     border-color: var(--accent);
+    transform: translateY(-5px);
     box-shadow: 0 15px 40px rgba(212, 175, 55, 0.15);
-}
-
-.map-container-locked {
-    width: 100%;
-    height: 100%;
-    pointer-events: none; /* Locks the iframe from interaction */
-    opacity: 0.7; /* Dims the map to let the survey overlay pop */
-    filter: grayscale(30%) contrast(120%);
-}
-
-.survey-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    pointer-events: none;
-    z-index: 10;
-}
-
-.survey-plot {
-    fill: rgba(212, 175, 55, 0.15);
-    stroke: var(--accent);
-    stroke-width: 2;
-    stroke-dasharray: 4,4;
-}
-
-.survey-road {
-    stroke: var(--accent-terracotta);
-    stroke-width: 4;
-}
-
-.survey-sea {
-    stroke: var(--accent-olive);
-    stroke-width: 3;
-    stroke-dasharray: 5,5;
-}
-
-.survey-node {
-    fill: var(--accent-olive);
-}
-
-.survey-labels {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
-    z-index: 20;
-}
-
-.s-label {
-    position: absolute;
-    background: var(--bg-darkest);
-    padding: 6px 12px;
-    border-radius: 4px;
-    font-size: 0.75rem;
-    font-weight: 600;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
-}
-
-.s-road {
-    top: 60px;
-    left: 50%;
-    transform: translateX(-50%);
-    color: var(--accent-terracotta);
-    border: 1px solid rgba(200, 107, 83, 0.3);
-}
-
-.s-sea {
-    bottom: 40px;
-    left: 40px;
-    color: var(--accent-olive);
-    border: 1px solid rgba(124, 136, 104, 0.3);
 }
 
 /* Opportunity */
